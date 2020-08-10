@@ -40,7 +40,9 @@ else()
   add_executable(QtCurvesCPP
     main.cpp
     mainwindow.cpp
+    renderarea.cpp
     mainwindow.h
+    renderarea.h
     mainwindow.ui
     ${TS_FILES}
   )
