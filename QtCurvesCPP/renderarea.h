@@ -10,6 +10,10 @@ public:
     explicit renderArea(QWidget *parent = nullptr);
     QSize sizeHint() const;
     QSize minimumSizeHint() const;
+    enum Shapes {Atroid, Cycloid, HugensCycloid, HypoCycloid};
+    void setBackgroundColor(QColor color) {mBackGroundColor = color;}
+    QColor getBackgroundColor(void)const {return mBackGroundColor;}
+
 protected:
     void paintEvent(QPaintEvent *event);
 signals:

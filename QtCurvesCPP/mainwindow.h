@@ -15,6 +15,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_btnAstroid_clicked();
+
+    void on_btnCycloid_clicked();
+
+    void on_btnHugens_clicked();
+
+    void on_MainWindow_iconSizeChanged(const QSize &iconSize);
+
+    void on_btnHypo_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
